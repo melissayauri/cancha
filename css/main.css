@@ -1,0 +1,105 @@
+/*Implementando el contenedor*/
+.container{
+/*aplicando posicion relative para que no afecte a otro elementos*/
+position: relative;
+background-color: rgb(128,198,125);
+width: 500px;
+height: 300px;
+
+}
+/*Implementado el primer rectangulo grande que esta dentro del contendedor*/
+.rectangle1{
+  background-color: rgb(128,198,125);
+  /*tamaño del rectangulo*/
+  width: 455px;
+  height: 255px;
+  border: 3px solid white;
+  /*aplicando esta posicion para generar un eje de coordenadas dentro del contenedor*/
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo en el centro del contenedor*/
+  bottom: 20px;
+  right: 20px;
+}
+
+/*Implementado el primer rectángulo pequeño en el lado izquierdo , dentro del rectángulo grande*/
+.rectangle2{
+  /*aplicando borde al rectangulo menos el lado izquierdo*/
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo en la parte izquierda*/
+  bottom: 70px;
+
+  }
+
+  /*Implementado el segundo rectángulo pequeño en el lado derecho, dentro del rectángulo grande*/
+  .rectangle3{
+    /*aplicando borde al rectangulo menos el lado derecho*/
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    /*aplicando coordenadas para posicionarlo en la parte derecha*/
+    bottom: 70px;
+    right: 0;
+  }
+
+
+/*implementado el círculo grande*/
+.circle1{
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 2px solid white;
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo en el centro del rectángulo grande*/
+  bottom: 80px;
+  left: 160px;
+
+
+}
+
+/*implementado el primer círculo pequeño*/
+.circle2{
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  /*aplicando esta posicion para generar un eje de coordenadas dentro del rectángulo grande*/
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo arriba del círculo grande*/
+  bottom: 220px;
+  right: 220px;
+
+}
+/*implementado el segundo círculo pequeño*/
+.circle3{
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  /*aplicando esta posicion para generar un eje de coordenadas dentro del rectángulo grande*/
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo en el rectángulo izquierdo*/
+  bottom: 181px;
+  left: 75px;
+
+}
+/*implementado el tercer circulo pequeño*/
+.circle4{
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  /*aplicando coordenadas para posicionarlo en el rectángulo derecho*/
+  bottom: 80px;
+  left: 350px;
+
+
+}
